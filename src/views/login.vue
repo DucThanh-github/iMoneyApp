@@ -3,17 +3,6 @@
     <div class="container mx-auto px-8">
       <form @submit.prevent="onSubmit" class="flex flex-col space-y-6">
         <div class="row">
-          <label for="fullName" class="flex flex-col">
-            <span class="font-semibold text-dark">Full Name</span>
-            <input
-              id="fullName"
-              class="border border-gray-500 rounded-lg px-4 py-3 mt-4"
-              type="text"
-              placeholder="iMoney..."
-            />
-          </label>
-        </div>
-        <div class="row">
           <label for="email" class="flex flex-col">
             <span class="font-semibold text-dark">Email Address</span>
             <input
@@ -45,11 +34,11 @@
         </div>
       </form>
       <div class="w-full mt-8 text-center">
-        <span>I'm already a member.</span>
+        <span>I'm a new user.</span>
         <router-link
-          :to="{ name: 'Login', params: {} }"
+          :to="{ name: 'Register', params: {} }"
           class="text-primary ml-1 font-semibold"
-          >Sign In</router-link
+          >Sign Up</router-link
         >
       </div>
     </div>
