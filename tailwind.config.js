@@ -1,22 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './public/**/*.html',
-    './src/**/*.{js,jsx,ts,tsx,vue}',
-  ],
+  content: ["./public/**/*.html", "./src/**/*.{js,jsx,ts,tsx,vue}"],
   theme: {
     extend: {
       colors: {
-        dark:"#363853",
+        dark: "#363853",
         primary: "#0012FF",
         green: "#67D4CA",
-        red: "#F28080"
+        red: "#F28080",
+        "bg-main": "#F8FAFB",
       },
       fontFamily: {
-        "font-main": ["'Montserrat'", "sans-serif"]
-      }
+        "font-main": ["'Montserrat'", "sans-serif"],
+      },
     },
   },
   plugins: [],
-}
-
+};
