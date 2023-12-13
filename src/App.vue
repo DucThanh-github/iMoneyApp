@@ -12,7 +12,6 @@ import { PUBLIC_LAYOUT } from "@/constants/index.js";
 export default {
   setup() {
     const route = useRoute();
-    console.log(route);
     return {
       layout: computed(() => (route.meta.layout || PUBLIC_LAYOUT) + "-layout"),
     };
