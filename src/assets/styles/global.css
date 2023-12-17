@@ -1,6 +1,6 @@
 body {
   @apply font-font-main;
-  @apply bg-bg-main;
+  @apply bg-dark-light;
   font-size: 16px;
 }
 

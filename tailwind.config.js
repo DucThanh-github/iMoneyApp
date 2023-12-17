@@ -8,7 +8,7 @@ module.exports = {
         primary: "#0012FF",
         green: "#67D4CA",
         red: "#F28080",
-        "bg-main": "#F8FAFB",
+        "dark-light": "#F8FAFB",
       },
       fontFamily: {
         "font-main": ["'Montserrat'", "sans-serif"],
