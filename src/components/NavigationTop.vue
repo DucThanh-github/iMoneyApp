@@ -16,9 +16,12 @@
           <h1 class="font-bold text-dark ml-2">{{ meta.text }}</h1>
         </div>
         <div>
-          <ul>
-            <li>
+          <ul @click="store.onClickRightBtn" class="hover:cursor-pointer">
+            <li v-if="meta.icon">
               <i class="t2ico t2ico-notification text-2xl" />
+            </li>
+            <li v-if="meta.endText">
+              <span>{{ meta.endText }}</span>
             </li>
           </ul>
         </div>
@@ -30,12 +33,21 @@
 <script>
 import { computed } from "vue";
 import { useRoute } from "vue-router";
+import { useStore } from "@/stores";
+
 export default {
   setup() {
     const route = useRoute();
+    const store = useStore();
     console.log("route", route);
+    const clickRightBtn = () => {
+      console.log("click on top navigation", store.stateRightButton);
+      store.onClickRightBtn();
+    };
     return {
       meta: computed(() => route.meta),
+      clickRightBtn,
+      store,
     };
   },
 };

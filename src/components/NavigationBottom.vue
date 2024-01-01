@@ -1,7 +1,7 @@
 <template>
   <footer
     id="footer"
-    class="fixed w-full bottom-0 left-0 pt-4 bg-red p-b-safe-4"
+    class="fixed w-full bottom-0 bg-white left-0 pt-4 p-b-safe-4"
   >
     <div class="container mx-auto h-full px-8">
       <ul class="flex justify-between items-center">

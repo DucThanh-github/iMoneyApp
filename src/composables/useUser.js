@@ -8,7 +8,9 @@ const user = ref(projectAuth.currentUser);
 //   if (_user) user.value = _user;
 // });
 projectAuth.onAuthStateChanged((_user) => {
-  if (_user) user.value = _user;
+  if (_user) {
+    user.value = _user;
+  }
 });
 function getUser() {
   return { user };
